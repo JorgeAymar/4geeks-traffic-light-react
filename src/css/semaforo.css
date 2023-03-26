@@ -1,42 +1,58 @@
-.light {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
+
+
+.semaforo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.luz {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.luz.rojo {
+  background-color: red;
+}
+
+.luz.amarillo {
+  background-color: yellow;
+}
+
+.luz.verde {
+  background-color: green;
+}
+
+.luz.activa {
+  opacity: 1;
+}
+
+.luz.purpura {
+  background-color: purple;
+}
+
+.light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  width: 100px;
+}
   
-  .red {
-    background-color: red;
-  }
-    
-  .yellow {
-    background-color: yellow;
-  }
+.botones {
+  margin-top: 20px;
+}
 
-  .green {
-    background-color: green;
-  }
-
-  .red-off {
-    background-color: rgb(251, 213, 213);
-  }
-    
-  .yellow-off {
-    background-color: rgb(244, 244, 187);
-  }
-
-  .green-off {
-    background-color: rgb(196, 243, 196);
-  }  
-
-  .light-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: black;
-    width: 100px;
-  }
-  
+.btn {
+  margin: 0 5px;
+}
